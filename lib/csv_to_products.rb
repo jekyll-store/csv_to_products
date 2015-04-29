@@ -45,11 +45,11 @@ module CSVToProducts
     end
 
     def product_path
-      File.expand_path("#{dasherize(row['name'])}.md", folder)
+      File.expand_path("#{sanitize(row['name'])}.md", folder)
     end
 
-    def dasherize(s)
-      s.to_s.gsub(' ', '-').downcase
+    def sanitize(s)
+      s.to_s.gsub(/[ \/\\]/, '-').downcase
     end
 
     def is_number?(s)
