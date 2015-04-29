@@ -1,0 +1,6 @@
+name,sku,Sock Fabric,description,sizes[Small],sizes[Medium],sizes[Large],genders[Female],genders[Male]
+Big Dot,BD8665,Cotton,"A fun ankle-cut sock, suitable for everyone.",y,y,y,y,y
+Flower Power,FP2392,Cotton,"A low-cut cotton sock for those who miss the sixties!",y,y,n,y,n
+Hearts,HT8493,Wool,"A warm wooly sock that'll cheer you up in the winter months.",y,y,n,y,n
+Business,BS2394,Cotton,"Suitable for work and incredibly durable cotton sock.",n,y,y,y,y
+Luxury,LX3943,Silk,"Nothing is quite like the feeling of silk on your tired feet.",n,y,n,n,y

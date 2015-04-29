@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/csv_to_products'
+
+ARGV[0] ||= 'products.csv'
+ARGV[1] ||= '_products'
+ARGV.map! { |f| File.expand_path(f) }
+
+begin
+	CSVToProducts.parse(*ARGV)
+rescue FileNotFound
+	puts 'File can not be found'
+rescue NameNotFound
+	puts 'Must have "name" field.'
+rescue PriceNotFound
+	puts 'Must have "price" field.'
+rescue NameNotUnique
+	puts 'All names must be unique.'
+rescue PriceNotNumeric
+	puts 'All prices must be numeric'
+end
