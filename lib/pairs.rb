@@ -30,7 +30,7 @@ module Pairs
 
     def pretty_pairs
       pairs.map do |k, v|
-        v = v.join(' ') if v.is_a?(Array)
+        v = "[#{v.join(', ')}]" if v.is_a?(Array)
         "#{k}: #{v}\n"
       end.join
     end

@@ -21,8 +21,8 @@ describe Pairs do
                "price: 6.5\n" \
                "sku: FP2392\n" \
                "sock_fabric: Cotton\n" \
-               "sizes: Small Medium\n" \
-               "genders: Female\n"
+               "sizes: [Small, Medium]\n" \
+               "genders: [Female]\n"
     expect(Pairs.create(row)).to eq(expected)
   end
 end

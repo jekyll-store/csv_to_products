@@ -22,9 +22,9 @@ If the arguments are missing, it will try to parse `products.csv` into the `_pro
 
 Each product must have a unique name and a numeric price.
 
-## Collection
+## Array
 
-Any field name of the form `collection[Member]` with be treated as a collection. For example a csv with fields like this,
+Any field name of the form `array[Member]` with be treated as a array. For example a csv with fields like this,
 
 | available_sizes[Small] | available_sizes[Medium] | available_sizes[Large] |
 | ---------------------- | ----------------------- | ---------------------- |
@@ -33,7 +33,7 @@ Any field name of the form `collection[Member]` with be treated as a collection.
 Will be collected into the front matter as:
 
 ```yaml
-available_sizes: Small Large
+available_sizes: [Small, Large]
 ```
 
 All values will be treated as false, except for: `y`, `Y`, `1`, `true`, `yes`, and `Yes`.
