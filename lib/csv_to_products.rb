@@ -41,7 +41,7 @@ module CSVToProducts
     def create_product
       pairs = Pairs.create(row)
       description = row['description']
-      File.write(product_path, "---\n#{pairs}---\n#{description}")
+      File.write(product_path, "---\n#{pairs}---\n#{description}".encode('utf-8'))
     end
 
     def product_path
