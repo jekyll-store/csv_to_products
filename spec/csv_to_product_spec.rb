@@ -14,7 +14,7 @@ describe CSVToProducts do
     end
 
     it 'creates correctly named files' do
-      expected = %w(big-dot.md business.md flower-power.md hearts.md luxury-silky.md)
+      expected = %w(big-dot.md business-crem.md flower-power.md hearts.md luxury-silky.md)
       expect(Dir.entries(TMP)).to include(*expected)
     end
 
