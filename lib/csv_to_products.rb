@@ -1,6 +1,7 @@
 require 'csv'
 require 'fileutils'
 require_relative 'pairs'
+require_relative 'core_ext/csv_row'
 
 module CSVToProducts
   class << self
