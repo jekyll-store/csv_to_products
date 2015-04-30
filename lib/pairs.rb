@@ -30,6 +30,7 @@ module Pairs
 
     def pretty_pairs
       pairs.map do |k, v|
+        next unless v && v.length > 0
         v = "[#{v.join(', ')}]" if v.is_a?(Array)
         "#{k}: #{v}\n"
       end.join

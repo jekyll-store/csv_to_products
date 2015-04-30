@@ -6,6 +6,7 @@ describe Pairs do
       'name' => 'Flower & Power',
       'price' => '6.5',
       'sku' => 'FP2392',
+      'weight' => '',
       'Sock Fabric' => 'Cotton and Wool',
       'description' => 'A low-cut cotton sock for those who miss the sixties!',
       'sizes[Small]' => 'y',
