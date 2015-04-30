@@ -41,7 +41,8 @@ module Pairs
     end
 
     def quote_dangerous(s)
-      s =~ /[^\w. ]/ ? "'#{s}'" : s
+      return s unless s =~ /[^\w. ]/
+      s =~ /'/ ? "\"#{s}\"" : "'#{s}'"
     end
   end
 end
