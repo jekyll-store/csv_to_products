@@ -40,7 +40,7 @@ module Pairs
     end
 
     def quote_dangerous(s)
-      s =~ /[^\w|.]/ ? "'#{s}'" : s
+      s =~ /[^\w. ]/ ? "'#{s}'" : s
     end
   end
 end
