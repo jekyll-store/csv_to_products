@@ -3,7 +3,7 @@ require 'pairs'
 describe Pairs do
   let(:row) do
     {
-      'name' => 'Flower Power',
+      'name' => 'Flower & Power',
       'price' => '6.5',
       'sku' => 'FP2392',
       'Sock Fabric' => 'Cotton',
@@ -17,7 +17,7 @@ describe Pairs do
   end
 
   it 'parse correctly' do
-    expected = "name: Flower Power\n" \
+    expected = "name: 'Flower & Power'\n" \
                "price: 6.5\n" \
                "sku: FP2392\n" \
                "sock_fabric: Cotton\n" \
