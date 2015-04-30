@@ -49,7 +49,7 @@ module CSVToProducts
     end
 
     def sanitize(s)
-      s.to_s.gsub(/[ \/\\]/, '-').gsub(/[^\w\-]/, '').downcase
+      s.to_s.gsub(/[ \/\\]/, '-').gsub(/[^\w\-]/, '').gsub(/\-+/, '-').downcase
     end
 
     def is_number?(s)
